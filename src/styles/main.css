@@ -1,48 +1,66 @@
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100dvh;
   background-color: #e3f2fd;
+  color: #fff;
 }
 
-.container{
+.container {
   width: 48.75rem;
   border-radius: 1.25rem;
   padding: 2.19rem 2.5rem;
-  border: red 1px solid;
+  background-color: black;
 }
 
-header{
-  h2{
-    font-size: 1.6rem;
-  }
-  .column{
-    display: flex;
-    align-items: center;
-
-    span{
-      font-weight: 500;
-      margin-right: 1rem;
-      font-size: 1.19rem;
-    }
-  }
+header h2 {
+  font-size: 1.6rem;
 }
 
-.volume-slider{
-  input{
-    accent-color: #fff;
-  }
+header .column {
+  display: flex;
+  align-items: center;
+}
+header .column span {
+  font-weight: 500;
+  margin-right: 1rem;
+  font-size: 1.19rem;
 }
 
-.keys-check{
-  input{
-    width: 3.75rem;
-    height: 1.9rem;
-    appearance: none;
-    border-radius: 1.9rem;
-    background-color: #4b4b4b;
-    cursor: pointer;
-    position: relative;
-  }
+.volume-slider input {
+  accent-color: #fff;
+}
+
+.keys-check input {
+  width: 3.75rem;
+  height: 1.9rem;
+  appearance: none;
+  border-radius: 1.9rem;
+  background-color: #4b4b4b;
+  cursor: pointer;
+  position: relative;
+}
+
+.keys-check input::before {
+  content: "";
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #8c8c8c;
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  border-radius: inherit;
+  transform: translateY(-50%);
+  transition: all 0.2s ease;
+}
+
+.keys-check input:checked::before {
+  left: 2.1rem;
+  background-color: 8c8c8c;
+}
+
+.piano-keys {
+  display: flex;
+  margin-top: 2.5rem;
 }
