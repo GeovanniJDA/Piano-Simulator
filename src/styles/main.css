@@ -113,3 +113,7 @@ header .column span {
   box-shadow: inset -5px 5px 10px rgba( 255, 255, 255, .1);
   background: linear-gradient(to bottom, #434343, #000);
 }
+
+.key.hidden span {
+  display: none;
+}
