@@ -14,16 +14,16 @@
     <title>Piano Simulator</title>
   </head>
   <body>
+    <header>
+      <h2>Virtual Piano</h2>
+      <div class="column volume-slider">
+        <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any"/>
+      </div>
+      <div class="column keys-check">
+        <span>Teclas</span> <input type="checkbox"/>
+      </div>
+    </header>
     <div class="container">
-      <header>
-        <h2>Virtual Piano</h2>
-        <div class="column volume-slider">
-          <span>Volume</span> <input type="range" min="0" max="1" value="0.5" step="any"/>
-        </div>
-        <div class="column keys-check">
-          <span>Teclas</span> <input type="checkbox"/>
-        </div>
-      </header>
       <ul class="piano-keys">
         <li class="key white" data-key="a"><span>a</span></li>
         <li class="key black" data-key="w"><span>w</span></li>

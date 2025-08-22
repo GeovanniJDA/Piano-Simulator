@@ -3,36 +3,49 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100dvh;
-  background-color: #e3f2fd;
+  background: bottom no-repeat url("../img/background.jpg");
+  background-size: cover;
   color: #fff;
 }
 
-.container {
-  width: 48.75rem;
-  border-radius: 1.25rem;
-  padding: 2.19rem 2.5rem;
-  background-color: black;
-}
 
-.container header {
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 6dvh;
+  padding: .5rem 2rem;
   color: #b2b2b2;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: black;
 }
 
 header h2 {
-  font-size: 1.6rem;
+  font-size: 1.5em;
 }
 
 header .column {
   display: flex;
   align-items: center;
 }
+
 header .column span {
   font-weight: 500;
   margin-right: 1rem;
   font-size: 1.19em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+  position: relative;
+  top: 12.5rem;
+  border-radius: 1.25rem;
+  background-color: black;
 }
 
 .volume-slider input {
@@ -69,7 +82,7 @@ header .column span {
 
 .piano-keys {
   display: flex;
-  margin-top: 2.5rem;
+  margin: 1rem 0rem;
 }
 
 .piano-keys .key{
